@@ -1,2 +1,2 @@
-# leet-speech-conv-and-times-tables
+# leet speech conv, times tables, and bubblesort
 title
