@@ -1,5 +1,5 @@
 # This is a sample Python script.
-
+import random
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
@@ -21,9 +21,21 @@ def bubble_sort(my_list):
     print(my_list)
 
 
+def is_sorted(my_list):
+    for i in range(len(my_list)):
+        if my_list[i] < my_list[i-1]:
+            return False
+    return True
+
+
+def bogo_sort(my_list):
+    while not is_sorted(my_list):
+        random.shuffle(my_list)
+    return my_list
+
 def main():
     bubble_sort(my_list)
-
+    bogo_sort(my_list)
 
 if __name__ == '__main__':
     main()
